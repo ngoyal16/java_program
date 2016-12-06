@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Calculator{
+public class HinduNumberToRomanNumber{
     public static void main(String []args){
         Scanner user_input = new Scanner( System.in );
         System.out.print("Please Enter the a number between 1 to 5 : ");
