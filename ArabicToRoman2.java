@@ -16,15 +16,15 @@ public class ArabicToRoman{
             System.out.println("You have enterd '4'. The Roman equivalent is 'IV'");
         }else if(choice == 5){
             System.out.println("You have enterd '5'. The Roman equivalent is 'V'");
-        }else if(choice == 5){
+        }else if(choice == 6){
             System.out.println("You have enterd '6'. The Roman equivalent is 'VI'");
-        }else if(choice == 5){
+        }else if(choice == 7){
             System.out.println("You have enterd '7'. The Roman equivalent is 'VII'");
-        }else if(choice == 5){
+        }else if(choice == 8){
             System.out.println("You have enterd '8'. The Roman equivalent is 'VIII'");
-        }else if(choice == 5){
+        }else if(choice == 9){
             System.out.println("You have enterd '9'. The Roman equivalent is 'IX'");
-        }else if(choice == 5){
+        }else if(choice == 10){
             System.out.println("You have enterd '10'. The Roman equivalent is 'X'");
         }else{
             System.out.println("You have enterd a number which is out of range");
