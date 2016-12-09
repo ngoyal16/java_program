@@ -10,9 +10,9 @@ import java.util.Scanner;
 
 public class Christmas {
 
-	
-	static String path = "files\\records.txt";
+	static String path = "----path goes here----";
 	static File f = new File(path);
+	static String absolutePath = f.getAbsolutePath();
 	static ArrayList<String> records = new ArrayList<>();
 	
 	static void welcome(){
@@ -22,13 +22,10 @@ public class Christmas {
 		System.out.println();
 	}
 	
-	static void prompt(){
-		System.out.println();
-		System.out.println("Please choose how you wish to proceed -");
-		System.out.println();
-	}
 	static void menu(){
 		
+		System.out.println();
+		System.out.println("Please choose how you wish to proceed -");
 		System.out.println("1. Enter Christmas Shopping List Records");
 		System.out.println("2. Mark a Christmas Gift as Purchased");
 		System.out.println("3. Write the Christmas Shopping List Records to a File");
@@ -136,7 +133,6 @@ public class Christmas {
 		Scanner sc = new Scanner(System.in);
 		
 		while(true){
-			prompt();
 			menu();
 			String choice = sc.nextLine();
 			
@@ -155,9 +151,9 @@ public class Christmas {
 					break;
 				case "4" :
 					System.out.println("Do you wish to read from file? Discard changes, if any?");
+					System.out.println("y / n ?");
 					String c = sc.next();
 					if(c.equals("y")){
-						System.out.println("in case y");
 						readRecords();
 					}
 					else{
@@ -175,7 +171,6 @@ public class Christmas {
 					return;
 				default :
 					System.out.println("Please Enter a valid choice");
-			
 			}
 		}
 	}
