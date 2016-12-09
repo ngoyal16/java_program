@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Christmas {
 
 	
-	static String path = "E:\\Linux\\UXArmy\\workspace\\Shopping\\src\\files\\records.txt";
+	static String path = "files\\records.txt";
 	static File f = new File(path);
 	static ArrayList<String> records = new ArrayList<>();
 	
