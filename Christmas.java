@@ -19,19 +19,6 @@ public class Christmas {
 		System.out.println("*************************************************************");
 		System.out.println("*                          WELCOME                          *");
 		System.out.println("*************************************************************");
-		
-		if(f.exists()){
-			FileReader fr = new FileReader(f);
-			BufferedReader br = new BufferedReader(fr);
-			String line  = new String();
-			try {
-				while((line = br.readLine()) != null){
-					records.add(line);
-				}
-			}catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
 	}
 	
 	static void menu(){
@@ -122,8 +109,20 @@ public class Christmas {
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner sc = new Scanner(System.in);
 		
+		if(f.exists()){
+			FileReader fr = new FileReader(f);
+			BufferedReader br = new BufferedReader(fr);
+			String line  = new String();
+			try {
+				while((line = br.readLine()) != null){
+					records.add(line);
+				}
+			}catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
 		welcome();
-	
 		do{
 			menu();
 			
