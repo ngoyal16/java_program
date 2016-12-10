@@ -29,13 +29,13 @@ public class Christmas {
 		System.out.println("3. Write the Christmas Shopping List Records to a File");
 		System.out.println("4. Read the Christmas Shopping List Records from a File");
 		System.out.println("5. Display All Christmas Shopping List Records");
-		System.out.println("6. Exit the Application");
-		System.out.print("Enter option no. : ");
+		System.out.println("6. Exit The Application");
+		System.out.print("Please Enter The Option number. : ");
 	}
 
 	static void close() {
 		System.out.println("*************************************************************");
-		System.out.println("*           “MERRY CHRISTMAS AND HAPPY NEW YEAR!”           *");
+		System.out.println("*             MERRY CHRISTMAS AND HAPPY NEW YEAR!           *");
 		System.out.println("*************************************************************");
 	}
 
