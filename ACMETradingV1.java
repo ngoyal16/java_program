@@ -174,6 +174,7 @@ public class ACMETradingV1 {
 				}
 
 				shippingValue = total;
+				
 
 				System.out.print("Total Shipping Cost = " + total);
 				System.out.print("\nWrong Choice Entered Press Enter to Continue ... \n");
@@ -203,9 +204,10 @@ public class ACMETradingV1 {
 					totals = totals + (ProductFivePrice * ProductFiveQuanity);
 				}
 
-				totals = totals + (float) ((totals * 11.5) / 100);
+				//totals = totals + (float) ((totals * 11.5) / 100);
 
-				salesTax = (float) totals;
+				//salesTax = (float) totals;
+				salesTax = (float) ((totals * 11.5) / 100);
 				System.out.print("Total Sales Tax = " + totals);
 				System.out.print("\nWrong Choice Entered Press Enter to Continue ... \n");
 
